@@ -3,26 +3,27 @@
 body {
     box-sizing: border-box;
     min-width: 100vw;
+    min-height: 100vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #canvas1 {
     border: 1px solid black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-.game-font{
+.game-font {
     text-align: center;
     font-family: "Honk", system-ui;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
-      "MORF" 15,
-      "SHLN" 50;
+        "MORF" 15,
+        "SHLN" 50;
     font-size: large;
 }
 
@@ -38,7 +39,14 @@ body {
     overflow: hidden;
     cursor: pointer;
 }
-#animation-select > option{
+
+#animation-select>option {
     text-align: center;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+#animation-select>option:hover,
+#animation-select>option:focus {
+    background-color: #e0e0e0;
 }
