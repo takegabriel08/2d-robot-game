@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+body {
+    box-sizing: border-box;
+    min-width: 100vw;
+    text-align: center;
+}
+
+#canvas1 {
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.game-font{
+    text-align: center;
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
+    font-size: large;
+}
+
+#animation-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 200px;
+    height: 40px;
+    background-color: #87d6c55b;
+    border-radius: 4px;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+#animation-select > option{
+    text-align: center;
+    border-radius: 5px;
+}
